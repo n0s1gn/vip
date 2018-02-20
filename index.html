@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="view-port" content="width=device-width,initial-scale=1.0">
+    <title>Van1-万里挑一</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript">
+    function dihejk() {
+    var diz = document.getElementById("url").value;
+    var jkv = "http://api.baiyug.cn/vip/index.php?url=";
+    var cljurl = document.getElementById("player");
+    cljurl.src = jkv + diz
+  }
+  </script>
+</head>
+<body>
+<!--site-banner-start-->
+    <div class="site-banner">
+        <div class="logo"></div>
+        <span>Van1-万里挑一</span>
+    </div>
+<!--site-banner-end-->
+
+<!--player-start-->
+    <div class="site-player">
+      <iframe style="border-radius: 15px; background-color:#000" id="player" src="" width="580px" height="400px" scrolling="no" frameborder="0"></iframe>
+    </div>
+<!--player-end-->
+
+<!--input-group-start-->
+    <div class="input-group">
+      <input class="url" type="search" placeholder="请在此输入播放地址" id="url">
+      <button class='btn-confirm' onclick="dihejk()">播放</button>
+    </div>
+<!--input-group-end-->
+
+    <div class="site-bottom">
+      <span>接口具有时效性，如无法播放，请联系我！</span>
+    </div>
+
+
+</body>
+</html>
+<!-- 接口api
+http://api.baiyug.cn/vip/index.php?url=
+http://api.xfsub.com/index.php?url=
+http://api.47ks.com/webcloud/?v=
+http://api.nepian.com/ckparse/?url=
+http://aikan-tv.com/?url=
+http://j.zz22x.com/jx/?url=
+http://jiexi.071811.cc/jx2.php?url=
+http://www.chepeijian.cn/jiexi/vip.php?url=
+https://api.flvsp.com/?url=
+http://www.662820.com/xnflv/index.php?url=
+-->
