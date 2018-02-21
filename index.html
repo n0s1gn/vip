@@ -10,7 +10,9 @@
     <script type="text/javascript">
     function dihejk() {
     var diz = document.getElementById("url").value;
-    var jkv = "https://api.47ks.com/webcloud/?v=";
+    var jkurl = document.getElementById("api");
+    var jk = document.getElementById("api").selectedIndex;
+    var jkv = jkurl.options[jk].value;;
     var cljurl = document.getElementById("player");
     cljurl.src = jkv + diz
   }
@@ -32,6 +34,25 @@
 
 <!--input-group-start-->
     <div class="input-group">
+        <select class="select-api" id="api">
+        <option value="http://api.baiyug.cn/vip/index.php?url=">baiyug</option>
+        <option value="http://api.tanganbin.cn/tab.php?url=">TAB</option>
+        <option value="https://api.47ks.com/webcloud/?v=">47ks</option>
+        <option value="http://2.jx.72du.com/video.php?url=">72du</option>
+        <option value="http://www.vipjiexi.com/yun.php?url=">vipjiexi</option>
+        <option value="http://api.cloudparse.com/?url=">cloudparse</option>
+        <option value="http://yyygwz.com/index.php?url=">yyygwz</option>
+        <option value="http://www.wmxz.wang/video.php?url=">wmxz</option>
+        <option value="http://000o.cc/jx/ty.php?url=">000o</option>
+        <option value="http://5qiyi.sdyhy.cn/5qiyi/5qiyi1.php?url=">sdyhy(1)</option>
+        <option value="http://5qiyi.sdyhy.cn/5qiyi/5qiyi2.php?url=">sdyhy(2)</option>
+        <option value="http://api.47ks.com/webcloud/?v=">47ks</option>
+        <option value="http://jx.71ki.com/?url=">71ki</option>
+        <option value="http://yun.mt2t.com/yun?url=">mt2t</option>
+        <option value="http://jx.haokan5.net/ty/tong.php?url=">haokan5(ty)</option>
+        <option value="http://jx.haokan5.net/jx/?url=">haokan5(jx)</option>
+        <option value="http://player.gakui.top/?url=">gakui</option>
+        <option value="http://qtzr.net/s/?qt=">qtzr</option>
       <input class="url" type="search" placeholder="请在此输入播放地址" id="url">
       <button class='btn-confirm' onclick="dihejk()">播放</button>
     </div>
