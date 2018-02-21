@@ -68,7 +68,7 @@ p{word-wrap:break-word}
       width:580px;
       margin: 20px auto auto auto;
     }
-    .input-group input{
+    .input-group input,select{
       text-align: center;
       width:580px;
       height: 50px;
@@ -84,6 +84,19 @@ p{word-wrap:break-word}
       background-color: #5cb85c;
       color: #eee;
       border-radius: 10px;
+    }
+    
+    .input-group input {
+      border-radius: 0 0 6px 6px ;
+    }
+
+    .input-group select {
+      font-size: 20px;
+      border-radius: 6px 6px 0 0 ;
+    }
+
+    .select-api option{
+      font-size: 18px;
     }
 
     .site-bottom {
